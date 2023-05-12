@@ -130,6 +130,15 @@ p {
     background-color: var(--color-dark-blue);
 }
 
+.navbar__toggle-btn {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+}
+
 /* Home */
 #home {
     background: url('imgs/background.jpeg') center/cover no-repeat;
@@ -172,6 +181,9 @@ p {
 }
 
 /* About */
+#about {
+    background-color: var(--color-white);
+}
 .about__majors {
     display: flex;
     justify-content: space-between;
@@ -378,19 +390,25 @@ p {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin: 45px;
+    margin-left: -60px;
+}
+
+.experience__logo:nth-child(odd) {
+    margin-right: 30px;
 }
 
 .experience__logo1 {
     height: 185px;
     width: 240px;
     border-radius: 50%;
+    margin-right: -95px;
 }
 
 .experience__speech-bubble {
     padding: 18px;
     background-color: var(--color-white);
     border-radius: var(--size-border-radius);
+    min-width: 260px;
 }
 
 .experience__speech-bubble p {
@@ -425,4 +443,49 @@ p {
     transform: scale(1.2);
     color: var(--color-blue);
     transition: all 50ms ease-in;
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+    .navbar__toggle-btn {
+        display: block;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .about__majors {
+        flex-direction: column;
+    }
+
+    .major {
+        margin-bottom: 38px;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-grow: 1;
+    }
+
+    .experience__logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .experience__logo1 {
+        width: 130px;
+        height: 100px;
+    }
 }
