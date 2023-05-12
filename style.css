@@ -177,9 +177,13 @@ p {
     border-radius: var(--size-border-radius);
 }
 
+.home__contact:hover {
+    background-color: var(--color-light-grey);
+}
+
 /* Section common */
 .section {
-    padding: 50px;
+    padding: 16px;
     text-align: center;
     margin: auto;
 }
@@ -411,25 +415,21 @@ p {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-left: -60px;
+}
+
+.experience__logo:nth-child(even) {
+    margin-left: 40px;
 }
 
 .experience__logo:nth-child(odd) {
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
-.experience__logo1 {
-    height: 185px;
-    width: 240px;
-    border-radius: 50%;
-    margin-right: -95px;
-}
 
 .experience__speech-bubble {
     padding: 18px;
     background-color: var(--color-white);
     border-radius: var(--size-border-radius);
-    min-width: 260px;
 }
 
 .experience__speech-bubble p {
@@ -462,7 +462,6 @@ p {
 
 .contact__links i:hover {
     transform: scale(1.2);
-    color: var(--color-blue);
     transition: all 50ms ease-in;
 }
 
@@ -490,15 +489,26 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+    :root {
+        /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+    }
+
     .navbar__toggle-btn {
         display: block;
+        top: 16px;
+        right: 16px;
+        font-size: var(--font-medium);
     }
 
     #navbar {
         flex-direction: column;
         align-items: flex-start;
         background-color: var(--color-blue);
-
     }
 
     #navbar.navbar--dark {
@@ -518,18 +528,30 @@ p {
 
     .about__majors {
         flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
 
     .major {
-        margin-bottom: 38px;
+        margin-bottom: 30px;
     }
 
     .skillset {
         flex-direction: column;
     }
 
+    .category__btn {
+        margin: 4px;
+        width: 100%;
+    }
+
     .project {
         flex-grow: 1;
+    }
+
+    .experience {
+        flex-direction: column;
+        align-items: center;
     }
 
     .experience__logo {
@@ -537,8 +559,25 @@ p {
         height: 80px;
     }
 
-    .experience__logo1 {
-        width: 130px;
-        height: 100px;
+    .experience__logo:nth-child(even), 
+    .experience__logo:nth-child(odd) {
+        margin: 0;
+        margin-bottom: 8px;
     }
+
+    .experience__speech-bubble {
+        order: 1;
+    }
+
+    .experience__speech-bubble p {
+        color: var(--color-light-grey);
+        font-size: var(--font-micro);
+    }
+    
+    .experience__speech-bubble .name {
+        color: var(--color-dark-grey);
+        font-weight: var(--weight-semi-bold);
+        font-size: var(--font-micro);
+    }
+
 }
