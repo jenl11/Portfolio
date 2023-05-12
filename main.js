@@ -50,7 +50,28 @@ document.addEventListener('scroll', () => {
 // handle click on arrow up
 arrowUp.addEventListener('click', () => {
     scrollIntoView('#home');
-})
+});
+
+// projects
+const workBtnContainer = document.querySelector('.project__categories');
+const projectContainer = document.querySelector('.project__works');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (e) => {
+    const filter = e.target.dataset.filter;
+    console.log(filter);
+    if (filter == null) {
+        return;
+    }
+
+    projects.forEach((project) => {
+        if (filter === '*' || filter === project.dataset.type) {
+            project.classList.remove('invisible');
+        } else {
+            project.classList.add('invisible');
+        }
+    });
+
+});
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
