@@ -359,3 +359,46 @@ p {
     margin-top: 8px;
     background-color: var(--color-dark-white);
 }
+
+/* Experience */
+#experiences {
+    background-color: var(--color-light-white);
+}
+
+.experiences {
+    margin: 40px;
+}
+
+.experience {
+    display: flex;
+    margin: 32px 0;
+}
+
+.experience__logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 45px;
+}
+
+.experience__logo1 {
+    height: 185px;
+    width: 240px;
+    border-radius: 50%;
+}
+
+.experience__speech-bubble {
+    padding: 18px;
+    background-color: var(--color-white);
+    border-radius: var(--size-border-radius);
+}
+
+.experience__speech-bubble p {
+    color: var(--color-light-grey);
+}
+
+.experience__speech-bubble .name {
+    color: var(--color-dark-grey);
+    font-weight: var(--weight-semi-bold);
+    font-size: var(--font-small);
+}
