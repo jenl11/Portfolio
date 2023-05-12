@@ -122,6 +122,7 @@ p {
 .navbar__logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
+    padding: 10px;
 }
 
 .navbar__menu__item {
@@ -140,7 +141,7 @@ p {
 
 .navbar__toggle-btn {
     position: absolute;
-    top: 16px;
+    top: 20px;
     right: 32px;
     font-size: 24px;
     color: var(--color-white);
@@ -500,7 +501,7 @@ p {
 
     .navbar__toggle-btn {
         display: block;
-        top: 16px;
+        top: 20px;
         right: 16px;
         font-size: var(--font-medium);
     }
