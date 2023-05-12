@@ -402,3 +402,27 @@ p {
     font-weight: var(--weight-semi-bold);
     font-size: var(--font-small);
 }
+
+/* Contact */
+#contact {
+    background-color: var(--color-light-blue);
+}
+
+.contact__title, .contact__email, .contact__info {
+    color: var(--color-white);
+}
+
+.contact__title {
+    margin: 32px 0;
+}
+
+.contact__links {
+    font-size: var(--font-medium);
+    margin: 24px 0;
+}
+
+.contact__links i:hover {
+    transform: scale(1.2);
+    color: var(--color-blue);
+    transition: all 50ms ease-in;
+}
