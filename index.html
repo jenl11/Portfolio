@@ -29,12 +29,12 @@
       </div>
       <div class="navbar__menu">
         <ul class="navbar__menu">
-          <li class="navbar__menu__item active">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">Projects</li>
-          <li class="navbar__menu__item">Experience</li>
-          <li class="navbar__menu__item">Contact</li>
+          <li class="navbar__menu__item active" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#experiences">Experience</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#project">Projects</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
       </div>
     
@@ -46,7 +46,6 @@
       </button>
 
     </nav>
-
 
     <!-- Home -->
     <section id="home">
@@ -95,21 +94,48 @@
       </div>
       <div class="about__schools">
         <div class="school">
-          <img src="imgs/schools/UBC_logo.png" alt="UBC" class="inner-image ubc">
+          <img src="imgs/schools/UBC_logo.png" alt="UBC" class="ubc">
           <div class="school__descriptiion">
             <p class="school__name">Univeristy of British Columbia</p>
             <p class="school__major">BSc in Mathematics</p>
             <p class="school__period">Sept 2020 - current</p>
           </div>
+
         </div>
         <div class="school">
-          <img src="imgs/schools/UofO_logo.png" alt="UofO" class="inner-image uofo">
+          <img src="imgs/schools/UofO_logo.png" alt="UofO" class="uofo">
           <div class="school__descriptiion">
             <p class="school__name">University of Ottawa</p>
             <p class="school__major">BSc in Computer Science, Honours</p>
             <p class="school__period">Sept 2018 - April 2019</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experiences" class="section">
+      <div class="section__container">
+        <h1>Experience</h1>
+      <div class="experiences">
+        <div class="experience">
+          <img src="imgs/experience/download.png" alt="Netgear" class="experience__logo">
+          <div class="experience__speech-bubble">
+            <p class="name">Software Test Engineer <br/> Richmond, BC</p>
+            <p>Developed and maintained automated test scripts in Python for the functional and reliability testing of wireless products. My duties included performing functional, non-functional, and regression testing on the software packages for mobile routers.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="experience__speech-bubble">
+            <p class="name">English teacher <br/> Seoul, South Korea</p>
+            <p>Developed and maintained automated test scripts in Python for the functional and reliability testing of wireless products. My duties included performing functional, non-functional, and regression testing on the software packages for mobile routers.</p>
+          </div>
+          <img src="imgs/experience/jprep.png" alt="JPrep" class="experience__logo1">
+          
+        </div>
+      </div>
       </div>
     </section>
 
@@ -272,32 +298,6 @@
       </div>
       </div>
 
-    </section>
-
-    <!-- Experience -->
-    <section id="experiences" class="section">
-      <div class="section__container">
-        <h1>Experience</h1>
-      <div class="experiences">
-        <div class="experience">
-          <img src="imgs/experience/download.png" alt="Netgear" class="experience__logo">
-          <div class="experience__speech-bubble">
-            <p class="name">Software Test Engineer <br/> Richmond, BC</p>
-            <p>Developed and maintained automated test scripts in Python for the functional and reliability testing of wireless products. My duties included performing functional, non-functional, and regression testing on the software packages for mobile routers.
-            </p>
-          </div>
-        </div>
-
-        <div class="experience">
-          <div class="experience__speech-bubble">
-            <p class="name">English teacher <br/> Seoul, South Korea</p>
-            <p>Developed and maintained automated test scripts in Python for the functional and reliability testing of wireless products. My duties included performing functional, non-functional, and regression testing on the software packages for mobile routers.</p>
-          </div>
-          <img src="imgs/experience/jprep.png" alt="JPrep" class="experience__logo1">
-          
-        </div>
-      </div>
-      </div>
     </section>
     
     <!-- Contact -->

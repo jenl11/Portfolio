@@ -107,6 +107,7 @@ p {
     color: var(--color-white);
     padding: 10px;
     transition: all var(--animation-duration) ease-in-out;
+    z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -229,16 +230,15 @@ p {
 }
 
 .school {
-    display: flex;
+    display: block;
     align-items: center;
     margin-bottom: 30px;
 }
 
 .school__descriptiion {
     margin: 0 16px;
-    text-align: left;
+    text-align: center;
 }
-
 
 .school__name, .school__major, .school__period {
     color: var(--color-light-grey);
@@ -246,6 +246,7 @@ p {
 
 .school__name {
     font-size: var(--font-small);
+    font-weight: var(--weight-semi-bold);
 }
 
 .school__period, .school__major {
