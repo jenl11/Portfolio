@@ -390,10 +390,9 @@ p {
     display: block;
     position: relative;
     left: 50%;
-    width: 50px;
+    width: 80px;
     height: 2px;
     transform: translateX(-50%);
-    margin-left: -12px;
     margin-top: 8px;
     background-color: var(--color-dark-white);
 }
